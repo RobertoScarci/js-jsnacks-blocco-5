@@ -59,3 +59,23 @@ const fuelCar = carList.filter((car) => {
 })
 
 console.log(fuelCar)
+
+const dieselCar = carList.filter((car) => {
+    if (car.alimentazione === 'diesel'){
+        return true;
+    }
+})
+
+console.log(dieselCar)
+
+const otherCar = carList.filter((car) => {
+    if(car.alimentazione === 'benzina'){
+        return false;
+    } else if(car.alimentazione === 'diesel'){
+        return false;
+    } else {
+        return true;
+    }
+})
+
+console.log(otherCar)
