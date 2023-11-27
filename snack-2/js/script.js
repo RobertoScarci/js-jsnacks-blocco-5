@@ -36,3 +36,13 @@ const list = [
         age: '20'
     }
 ]
+
+const driver = list.map((people) => {
+    if( people.age >= 18 ){
+        return people.name +  people.surname + ' è abilitato/a alla guida';
+    } else if( people.age < 18 ){
+        return people.name +  people.surname + ' non è abilitato/a alla guida';
+    }
+})
+
+console.log(list, driver)
