@@ -2,52 +2,60 @@
 const carList = [
     {
         marca: 'BMW',
-        modello: 'serie 1',
+        modello: 'Serie 1',
         alimentazione: 'diesel'
     },
     {
-        marca: 'BMW',
-        modello: 'serie 1',
+        marca: 'Audi',
+        modello: 'RS8',
+        alimentazione: 'benzina'
+    },
+    {
+        marca: 'Range Rover',
+        modello: '4x4',
+        alimentazione: 'gpl'
+    },
+    {
+        marca: 'Renault',
+        modello: 'Clio 2018',
         alimentazione: 'diesel'
     },
     {
-        marca: 'BMW',
-        modello: 'serie 1',
+        marca: 'Bugatti',
+        modello: 'Chiron',
+        alimentazione: 'elettrico'
+    },
+    {
+        marca: 'Tesla',
+        modello: 'Model S',
+        alimentazione: 'elettrico'
+    },
+    {
+        marca: 'Volkswagen',
+        modello: 'Golf GT',
+        alimentazione: 'benzina'
+    },
+    {
+        marca: 'Mercedes',
+        modello: 'Classe A',
         alimentazione: 'diesel'
     },
     {
-        marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
+        marca: 'Mercedes',
+        modello: 'Benz Classe A',
+        alimentazione: 'benzina'
     },
     {
         marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'BMW',
-        modello: 'serie 1',
-        alimentazione: 'diesel'
+        modello: 'Serie 7',
+        alimentazione: 'metano'
     }
 ]
+
+const fuelCar = carList.filter((car) => {
+    if (car.alimentazione === 'benzina'){
+        return true;
+    }
+})
+
+console.log(fuelCar)
